@@ -1,0 +1,24 @@
+﻿<Window x:Class="jabuke.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:jabuke"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="117*"/>
+            <ColumnDefinition Width="143*"/>
+            <ColumnDefinition Width="532*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="textBoxBoja" Height="23" Margin="10,54,2,0" TextWrapping="Wrap" VerticalAlignment="Top" Grid.Column="1" TextChanged="textboxBoja_TextChanged"/>
+        <Button x:Name="ButtonZapamtiBroj" Content="Zapamti" Grid.Column="2" HorizontalAlignment="Left" Margin="342,57,0,0" VerticalAlignment="Top" Width="75" Click="ButtonZapamtiBroj_Click"/>
+        <Button x:Name="ButtonIzračunajZbrojKoličinaSvih" Content="Izračunaj" Grid.Column="2" HorizontalAlignment="Left" Margin="342,123,0,0" VerticalAlignment="Top" Width="75" Click="ButtonIzračunajZbrojKoličinaSvih_Click"/>
+        <Button x:Name="ButtonPretraži" Content="Pretraži" Grid.Column="2" HorizontalAlignment="Left" Margin="342,197,0,0" VerticalAlignment="Top" Width="75" Click="ButtonPretraži_Click"/>
+        <TextBox x:Name="textBoxKoličina" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="75,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxIspisZbrojKoličinaSvih" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="10,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxIspisNajmanjeJabukaBoje" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Left" Height="23" Margin="36,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
